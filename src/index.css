@@ -10,6 +10,9 @@
   padding-left: 220px;
 }
 
+
+/* Nav Bar */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -28,7 +31,6 @@
 .logo {
   height: 60px;
   width: auto;
-  margin-bottom: 20vh;
 }
 
 .menu-items {
@@ -46,7 +48,12 @@
   margin-bottom: 10px;
   border-bottom: 1px solid lightgray;
   max-width: 150px;
-  text-align: center;
+  text-align: left;
+}
+
+.menu-icon {
+  margin-right: 10px;
+  font-size: 12px;
 }
 
 .home {
