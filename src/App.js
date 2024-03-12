@@ -5,16 +5,17 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
+import { Element } from 'react-scroll';
 
 function App() {
   return (
     <div>
       <NavBar />
-      <div id="home"><Home /></div>
-      <div id="about"><About /></div>
-      <div id="skills"><Skills /></div>
-      <div id="portfolio"><Portfolio /></div>
-      <div id="contact"><Contact /></div>
+      <Element name='home'><Home /></Element>
+      <Element name='about'><About /></Element>
+      <Element name='skills'><Skills /></Element>
+      <Element name='portfolio'><Portfolio /></Element>
+      <Element name='contact'><Contact /></Element>
     </div>
   );
 }

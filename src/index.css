@@ -8,6 +8,7 @@
 .section {
   height: 100vh;
   padding-left: 220px;
+  transition: padding-left 0.3s ease-in-out;
 }
 
 
@@ -26,6 +27,7 @@
   align-items: center;
   justify-content: flex-start;
   padding: 50px 0;
+  transition: left 0.3s ease-in-out; 
 }
 
 .logo {
@@ -55,6 +57,50 @@
   margin-right: 10px;
   font-size: 12px;
 }
+
+.active {
+  color: red;
+  font-weight: bold;
+}
+
+/* Hambuger Menu mobile */
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: left 0.3s ease-in-out; 
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    left: -100%;
+  }
+  .navbar.open {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    
+  }
+
+  body.open .hamburger {
+    left: 230px;
+  }
+
+  .section {
+    padding-left: 0px;
+  }
+
+  body.open .section {
+    padding-left: 220px;
+  }
+}
+
 
 .home {
   background-color: lightblue;
